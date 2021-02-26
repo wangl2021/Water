@@ -3,8 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+    td.ivu-table-row
+    {
+        border-style:solid;
+        border-width:1px;
+        border-color:gray;
+        width:400px
+    }
+
+</style>
 </head>
 <body>
-<h1>{{ hello }}</h1>
+<form class="add" method="get" action="{% url 'check' %}">
+    jira_id: <input type="text" name="jira_id" value=""><br>
+    summer: <input type="text" name="summer"><br><br>
+    <button onclick="copyText()">查询</button>
+
+</form>
+
+
+
+<form action="http://ebjqa.zzrcer.com/saturn/utc/common/downloadTplFile" method="post">
+<input type="text" name="b" value="1" />
+<input type="text" name="c" value="10100" />
+<input type="text" name="tplFileGidList" value="1"  style="width:400px" />
+<input type="submit" />
+</form>
+{#<table border="0" cellspacing="0"  cellpadding="0" style="width: 1224px;" height="20px">#}
+{#<tbody class="ivu-table-tbody">#}
+{##}
+{# <tr><!--行-->#}
+{#     <td class="ivu-table-row">id</td>#}
+{#     <td class="ivu-table-row">create_time</td>#}
+{#     <td class="ivu-table-row">jira_id</td>#}
+{##}
+{#     <td class="ivu-table-row">summary</td>#}
+{#     <td class="ivu-table-row">start_time</td>#}
+{#     <td class="ivu-table-row">end_time</td>#}
+{#     <td class="ivu-table-row">back_developer</td>#}
+{#     <td class="ivu-table-row">tester</td>#}
+{#     <td class="ivu-table-row">Client_developer</td>#}
+{#     <td class="ivu-table-row">web_developer</td>#}
+{#     <td class="ivu-table-row">producter</td>#}
+{##}
+{# </tr>#}
+{##}
+{#{% for item in info %}#}
+{#    <tr><!--行-->#}
+{#    <td  class="ivu-table-row" width="50px"><h5> {{ forloop.counter	 }}</h5></td>#}
+{#    <td  class="ivu-table-row"><h5> {{ item.create_time }}</h5></td>#}
+{#    <td class="ivu-table-row"><h5> {{ item.jira_id }}</h5></td>#}
+{#    <td class="ivu-table-row"><h5> {{ item.summary }}</h5></td>#}
+{#        <td class="ivu-table-row"><h5> {{ item.start_time }}</h5></td>#}
+{#        <td class="ivu-table-row"><h5> {{ item.end_time }}</h5></td>#}
+{#    <td class="ivu-table-row"><h5> {{ item.back_developer }}</h5></td>#}
+{#    <td class="ivu-table-row"><h5> {{ item.tester }}</h5></td>#}
+{#    <td class="ivu-table-row"><h5> {{ item.Client_developer }}</h5></td>#}
+{#    <td class="ivu-table-row"><h5> {{ item.web_developer }}</h5></td>#}
+{#    <td class="ivu-table-row"><h5> {{ item.producter }}</h5></td>#}
+{#    </tr>#}
+{#<h5>{{ info.0.jira_id }}</h5>#}
+{##}
+{#{% endfor %}#}
+</tbody>
+</table>
 </body>
 </html>

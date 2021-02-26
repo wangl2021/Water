@@ -1,7 +1,7 @@
 import pymysql
 def loginsql(env):
     db = {
-        'local': ['localhost', 'root', 'root'],
+        'local': ['192.168.15.111', 'fish', '123456'],
     }
 # 打开数据库连接
     db = pymysql.connect(
