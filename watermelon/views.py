@@ -25,11 +25,13 @@ def runoob(request):
 
 
 
-
-
-
 def seleinfo(requrest):
     user_list = models.UseInfos.objects.all()
     data = serializers.serialize("json", user_list)
     print(data)
     return JsonResponse(json.loads(data), safe=False,json_dumps_params={'ensure_ascii':False})
+
+
+def search(requrest):
+    print("hello")
+    return HttpResponse("hello")

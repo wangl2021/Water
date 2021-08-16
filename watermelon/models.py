@@ -31,7 +31,7 @@ class UseInfos(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'use_infos'
+        db_table = 'user_info'
 
 
 class UserInfo(models.Model):

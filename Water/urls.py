@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url('^runoob/', views.runoob,name='check'),
     url('^run/', views.seleinfo),
+    url('^search/', views.search),
 ]
