@@ -44,12 +44,12 @@ def get_info():
 
     get_info()
 
-# https://www.biquges.com/3_3468/2135770.html
+# https://www.biquges.com/4_4218/2570142.html
 # https://www.biquges.com/3_3468/2135500.html  <meta content="" name="keywords"/
 #https://www.biquges.com/72_72645/index.html
 def get_info1():
-    for i in range(24075923, 24085908):
-        url = "https://www.biquges.com/101_2221/%s.html"%(i)
+    for i in range(2570142, 24085908):
+        url = "https://www.biquges.com/4_4218/%s.html"%(i)
 
         response = requests.get(url=url)
         # r=response.content.decode('utf-8')
@@ -60,6 +60,6 @@ def get_info1():
             f.write(title+"\n"+txt.replace("\n", "")+"\n")  # 一次性读全部成一个字符串
         print(i)
         time.sleep(2)
-# get_info1()
+get_info1()
 
 
