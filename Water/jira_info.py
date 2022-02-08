@@ -7,7 +7,7 @@ def infos_jira(jira_id):
         'server': 'https://jira.zz.com/',
         'verify': False
     }
-    jira_info = JIRA(options=jira_option, basic_auth=('yuanwx', 'baomi2012'))
+    jira_info = JIRA(options=jira_option, basic_auth=('', ''))
     issue = jira_info.issue(jira_id)
     res = {
         'jira_id': issue.key,  # jira
