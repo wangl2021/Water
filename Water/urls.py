@@ -22,4 +22,5 @@ urlpatterns = [
     url('^runoob/', views.runoob,name='check'),
     url('^run/', views.seleinfo),
     url('^search/', views.search),
+    url('^hello/', views.hello),
 ]

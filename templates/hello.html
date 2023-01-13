@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+<script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+	<div v-if="Math.random() > 0.5">
+	  大 {[ message ]}
+	</div>
+	<div v-else>
+	  小 {[ message ]}
+	</div>
+</div>
+<script>
+new Vue({
+  el: '#app',
+    delimiters:["{[","]}"],
+  data: {
+    message: Math.random()
+  }
+})
+</script>
+
+
+</body>
+</html>

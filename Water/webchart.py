@@ -23,11 +23,11 @@ while True:
         r_v = os.system(main)
         win32gui.SendMessage(hld, 770, 0, 0)
 
-        # msg = "11122"
-        # time.sleep(2)
-        # w.OpenClipboard()
-        # w.EmptyClipboard()
-        # w.SetClipboardData(win32con.CF_UNICODETEXT, msg)
+        msg = "11122"
+        time.sleep(2)
+        w.OpenClipboard()
+        w.EmptyClipboard()
+        w.SetClipboardData(win32con.CF_UNICODETEXT, msg)
         # print('11')
         # win32gui.SendMessage(hld,win32con.WM_KEYDOWN, win32con.VK_RETURN, 0)
 

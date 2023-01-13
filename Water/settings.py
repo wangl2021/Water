@@ -88,10 +88,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         #'NAME': os.path.join(BASE_DIR, "jd.sql"),
         'NAME':'qa',
-        'HOST':'192.168.15.111',
+        'HOST':'localhost',
         'PORT':3306,
-        'USER':'fish',
-        'PASSWORD':'123456',
+        'USER':'root',
+        'PASSWORD':'root',
         'cursorclass':'pymysql.cursors.DictCursor'
     }
 }

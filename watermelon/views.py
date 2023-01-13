@@ -35,3 +35,7 @@ def seleinfo(requrest):
 def search(requrest):
     print("hello")
     return HttpResponse("hello")
+
+def hello(request):
+    # print("hello")
+    return render(request, 'hello.html')
